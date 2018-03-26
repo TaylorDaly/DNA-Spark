@@ -3,7 +3,7 @@
 1. Download PyCharm.
 2. Clone project from GitHub.
 3. Open Project in PyCharm.
-4. Go to *File > Settings > Project Interpreter* and add PySpark and Jupyter.
+4. Go to **File > Settings > Project Interpreter** and add PySpark and Jupyter.
 5. Install bowtie2.
     * In terminal set up Bioconda path.
     ```
@@ -18,5 +18,5 @@
 6. To run click play button on the notebook file. It will ask to connect to Jupyter url, just hit cancel and PyCharm 
 will have a popup that you can click on to run the notebook.
 
+## Documentation and important links
 [Bowtie 2 documentation](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#introduction)
-

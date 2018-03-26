@@ -1,5 +1,5 @@
 # DNA Spark Project
-##Initial Setup
+## Initial Setup
 1. Download PyCharm.
 2. Clone project from GitHub.
 3. Open Project in PyCharm.

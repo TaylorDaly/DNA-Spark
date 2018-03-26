@@ -20,5 +20,7 @@ will have a popup that you can click on to run the notebook.
 
 ## Documentation and important links
 [Bowtie 2 documentation](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#introduction)
+
 Pre-built Bowtie Indexes can be found [here](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+
 More indexes from illumina's iGenomes [here](https://support.illumina.com/sequencing/sequencing_software/igenome.html)

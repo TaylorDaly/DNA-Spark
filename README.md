@@ -19,3 +19,4 @@
 will have a popup that you can click on to run the notebook.
 
 [Bowtie 2 documentation](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#introduction)
+

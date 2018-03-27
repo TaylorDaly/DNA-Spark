@@ -15,7 +15,7 @@
     ```
     conda install bowtie2
     ```
-6. Download index and data to process.
+6. Download index and data to process and put directly in project folder.
     * Index
     ```
     wget ftp://ussd-ftp.illumina.com/Homo_sapiens/NCBI/GRCh38/Homo_sapiens_NCBI_GRCh38.tar.gz

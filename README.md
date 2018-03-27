@@ -15,6 +15,16 @@
     ```
     conda install bowtie2
     ```
+6. Download index and data to process.
+    * Index
+    ```
+    wget ftp://ussd-ftp.illumina.com/Homo_sapiens/NCBI/GRCh38/Homo_sapiens_NCBI_GRCh38.tar.gz
+    ```
+    * Data
+    ```
+    wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR043/SRR043378/SRR043378_1.fastq.gz
+    ```
+    (At this point we can run Bowtie 2 locally using this index and data)
 6. To run click play button on the notebook file. It will ask to connect to Jupyter url, just hit cancel and PyCharm 
 will have a popup that you can click on to run the notebook.
 

@@ -3,6 +3,7 @@
 1. Download PyCharm.
 2. Clone project from GitHub.
 3. Open Project in PyCharm.
+4. Go to **File > Settings > Project Interpreter** and click the gear next to the project interpreter dropdown and click "Add." Then add a new Virtualenv environment with Python 3.6 as base interpreter.
 4. Go to **File > Settings > Project Interpreter** and add PySpark and Jupyter.
 5. Install bowtie2.
     * In terminal set up Bioconda path.

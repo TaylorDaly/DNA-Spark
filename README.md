@@ -3,6 +3,7 @@
 1. Download PyCharm.
 2. Clone project from GitHub.
 3. Open Project in PyCharm.
+4. Go to **File > Settings > Project Interpreter** and click the gear next to the project interpreter dropdown and click "Add." Then add a new Virtualenv environment with Python 3.6 as base interpreter.
 4. Go to **File > Settings > Project Interpreter** and add PySpark and Jupyter.
 5. Install bowtie2.
     * In terminal set up Bioconda path.
@@ -15,11 +16,9 @@
     ```
     conda install bowtie2
     ```
-6. Download index and data to process and put directly in project folder.
+6. Download index and data to process and put directly in project folder and unzip.
     * Index
-    ```
-    wget ftp://ussd-ftp.illumina.com/Homo_sapiens/NCBI/GRCh38/Homo_sapiens_NCBI_GRCh38.tar.gz
-    ```
+ftp://ftp.ncbi.nlm.nih.gov/genomes/archive/old_genbank/Eukaryotes/vertebrates_mammals/Homo_sapiens/GRCh38/seqs_for_alignment_pipelines/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index.tar.gz
     * Data
     ```
     wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR043/SRR043378/SRR043378_1.fastq.gz

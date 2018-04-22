@@ -20,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/Main.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="10" />
+              <selected id="12" />
             </state>
           </provider>
         </entry>
@@ -202,9 +202,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4992903" weight="0.32918888" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4992903" weight="0.32918888" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.57381123" visible="true" weight="0.32103747" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.57381123" visible="true" weight="0.32103747" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4982257" weight="0.32918888" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18582244" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18582244" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32966644" />
@@ -406,13 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SRR043378_1.fastq/data">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out.sam">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="34">
@@ -420,10 +413,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SRR043378_1.fastq/data">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="10" />
+          <selected id="12" />
         </state>
       </provider>
     </entry>

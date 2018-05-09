@@ -4,7 +4,7 @@
     <list default="true" id="0fded5fb-8155-4009-95a8-46cf90cd7351" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Main.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.ipynb" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,6 +17,9 @@
     <SUITE FILE_PATH="coverage/DNA_Project$DNA_Project.coverage" NAME="DNA_Project Coverage Results" MODIFIED="1525896919718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600" />
+=======
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
       <file leaf-file-name="Main.ipynb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.ipynb">
@@ -28,6 +31,7 @@
         </entry>
       </file>
     </leaf>
+>>>>>>> e89ffdcff1d98ab3ec6e6969357c94f16a737a5b
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -84,8 +88,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="DNA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DNA_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="DNA-Spark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DNA-Spark" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DNA_Project" type="b2602c69:ProjectViewProjectNode" />
@@ -105,7 +109,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../DNA-Spark" />
+>>>>>>> e89ffdcff1d98ab3ec6e6969357c94f16a737a5b
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -184,8 +192,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="94" y="35" width="2906" height="1965" extended-state="6" />
-    <editor active="true" />
     <layout>
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49964514" weight="0.32978094" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5017206" side_tool="true" visible="true" weight="0.32089993" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49964514" weight="0.32918888" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49964514" weight="0.32918888" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49827942" weight="0.32103747" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4992903" weight="0.32918888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1728176" />
+=======
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49896765" weight="0.33866194" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.466643" side_tool="true" weight="0.32089993" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
@@ -193,7 +210,12 @@
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4992903" weight="0.32918888" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.53335696" visible="true" weight="0.32089993" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4982257" weight="0.32918888" />
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19162527" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18582244" />
+>>>>>>> e89ffdcff1d98ab3ec6e6969357c94f16a737a5b
+>>>>>>> dfb2d4a8a1c62fec9b4e0b336309c0bfd504e2e8
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32966644" />
@@ -249,6 +271,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Main.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+=======
     <entry file="file://$PROJECT_DIR$/out.sam">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="11288">
@@ -274,9 +302,11 @@
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state>
           <caret lean-forward="true" />
+>>>>>>> e89ffdcff1d98ab3ec6e6969357c94f16a737a5b
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SRR043378_1.fastq/data" />
     <entry file="file://$PROJECT_DIR$/Main.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -291,6 +321,10 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/SRR043378_1.fastq/data" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
+=======
     <entry file="file://$PROJECT_DIR$/SRR043378_1.fastq/data">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="136">
@@ -298,6 +332,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> e89ffdcff1d98ab3ec6e6969357c94f16a737a5b
     <entry file="file://$PROJECT_DIR$/Main.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -305,6 +340,14 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/out.sam" />
+    <entry file="file://$PROJECT_DIR$/SRR043378_1.fastq/data" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3570">
+          <caret line="105" column="7" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="7" />
+=======
     <entry file="file://$PROJECT_DIR$/out.sam">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="11288">
@@ -316,6 +359,7 @@
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="136">
           <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+>>>>>>> e89ffdcff1d98ab3ec6e6969357c94f16a737a5b
         </state>
       </provider>
     </entry>
@@ -423,6 +467,13 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/SRR043378_1.fastq/data" />
+    <entry file="file://$PROJECT_DIR$/Main.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="4" />
+=======
     <entry file="file://$PROJECT_DIR$/out.sam">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="34">
@@ -440,7 +491,12 @@
     <entry file="file://$PROJECT_DIR$/Main.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
+<<<<<<< HEAD
           <selected id="7" />
+=======
+          <selected id="2" />
+>>>>>>> e89ffdcff1d98ab3ec6e6969357c94f16a737a5b
+>>>>>>> dfb2d4a8a1c62fec9b4e0b336309c0bfd504e2e8
         </state>
       </provider>
     </entry>

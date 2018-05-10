@@ -173,3 +173,5 @@ fabric.properties
 .idea/sonarlint
 
 # End of https://www.gitignore.io/api/webstorm
+
+bowtie2-2.3.4.1-source/

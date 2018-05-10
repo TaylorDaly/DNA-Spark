@@ -101,9 +101,14 @@ ENV/
 .mypy_cache/
 
 # Huge Ass DNA files
+
 GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index/*
 SRR043378_1.fastq/*
 out.sam
+output/
+Bowtie2Index/
+yeast_40K_reads.fq
+
 
 # Created by https://www.gitignore.io/api/webstorm
 
@@ -175,4 +180,3 @@ fabric.properties
 # End of https://www.gitignore.io/api/webstorm
 
 bowtie2-2.3.4.1-source/
-output.sam/

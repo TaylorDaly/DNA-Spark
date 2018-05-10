@@ -65,3 +65,4 @@ def reduce_to_sam(output):
 alignment_pipe.foreach(lambda x: reduce_to_sam(x))
 
 sc.stop()
+

@@ -1,15 +1,15 @@
-from pyspark import SparkConf, SparkContext, TaskContext
+from pyspark import SparkConf, SparkContext, TaskContext, SparkFiles
 import math
 import os
 import time
 from pyspark.sql import SQLContext
 
 
-conf = SparkConf().setMaster("local").setAppName("DNA")
+conf = SparkConf().setAppName("DNA") # .setMaster("local") # .setAppName("DNA")
 
 sc = SparkContext(conf=conf)
-# input_file = "SRR043378_1.fastq/data"
-input_file = "hdfs:///spark_dna/yeast_40K_reads.fq"
+input_file = "hdfs:///spark_dna/SRR043378_1.fastq"
+# input_file = "hdfs:///spark_dna/yeast_40K_reads.fq"
 
 # creates tuples with format (string, line number)
 raw_input = (sc.textFile(input_file)).zipWithIndex()
@@ -40,14 +40,21 @@ def make_reads(iterable_read):
 
 reads_tuple = indexed_raw_input.groupByKey().mapValues(lambda x: make_reads(x))
 
+# test = reads_tuple.take(10)
+# print(test[0][1])
+
 # Sort by key, which is just the line number, and then get the values, which is just the read.
 readsRDD = reads_tuple.sortByKey().values()
 
 # bowtie_index = "GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index/" \
 #                "GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index"
-bowtie_index = "Bowtie2Index/genome"
+# bowtie_index = "/home/taylordaly31/Bowtie2Index/genome"
+bowtie_index = "/home/taylordaly31/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index"
+bowtie_script = "bowtie_spark.sh"
 
-alignment_pipe = readsRDD.pipe("bowtie2-2.3.4.1/bowtie2 --no-hd --no-sq -x " + bowtie_index + " -")
+sc.addFile(bowtie_script)
+
+alignment_pipe = readsRDD.pipe("/home/taylordaly31/bowtie2-2.3.4.1/bowtie2 -p 4 --no-hd --no-sq -x " + bowtie_index + " -")
 
 
 def reduce_to_sam(output):
@@ -56,6 +63,8 @@ def reduce_to_sam(output):
             os.makedirs("output")
         ctx = TaskContext()
         _id = str(ctx.partitionId())
+        # output.saveAsTextFile("hdfs:///tmp/output_"+_id+".sam")
+
         file = open("output/output_"+_id+".sam", "a+")
         file.write(output+'\n')
         file.close()
@@ -64,7 +73,11 @@ def reduce_to_sam(output):
 
 
 start = time.time()
-alignment_pipe.foreach(lambda x: reduce_to_sam(x))
+aligned_output = alignment_pipe.collect() # .foreach(lambda x: reduce_to_sam(x))
+file = open("output.sam", "a+")
+for alignment in aligned_output:
+        file.write(alignment+'\n')
+file.close()
 end = time.time()
 print("Runtime: " + str(end-start))
 

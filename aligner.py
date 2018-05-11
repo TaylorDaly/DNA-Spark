@@ -9,7 +9,7 @@ conf = SparkConf().setMaster("local").setAppName("DNA")
 
 sc = SparkContext(conf=conf)
 # input_file = "SRR043378_1.fastq/data"
-input_file = "hdfs:///files/yeast_40K_reads.fq"
+input_file = "hdfs:///spark_dna/yeast_40K_reads.fq"
 
 # creates tuples with format (string, line number)
 raw_input = (sc.textFile(input_file)).zipWithIndex()
@@ -45,9 +45,9 @@ readsRDD = reads_tuple.sortByKey().values()
 
 # bowtie_index = "GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index/" \
 #                "GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index"
-bowtie_index = "hdfs:///files/Bowtie2Index/genome"
+bowtie_index = "Bowtie2Index/genome"
 
-alignment_pipe = readsRDD.pipe("bowtie2 --no-hd --no-sq -x " + bowtie_index + " -")
+alignment_pipe = readsRDD.pipe("bowtie2-2.3.4.1/bowtie2 --no-hd --no-sq -x " + bowtie_index + " -")
 
 
 def reduce_to_sam(output):

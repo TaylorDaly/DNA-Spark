@@ -1,6 +1,7 @@
 from pyspark import SparkConf, SparkContext, TaskContext
 import math
 import os
+import time
 from pyspark.sql import SQLContext
 
 
@@ -61,7 +62,7 @@ def reduce_to_sam(output):
     except Exception as ex:
         print(ex)
 
-import time
+
 start = time.time()
 alignment_pipe.foreach(lambda x: reduce_to_sam(x))
 end = time.time()

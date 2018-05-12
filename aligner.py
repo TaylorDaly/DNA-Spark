@@ -46,38 +46,33 @@ reads_tuple = indexed_raw_input.groupByKey().mapValues(lambda x: make_reads(x))
 # Sort by key, which is just the line number, and then get the values, which is just the read.
 readsRDD = reads_tuple.sortByKey().values()
 
-# bowtie_index = "GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index/" \
-#                "GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index"
+
+# Test Bowtie2 index for smaller yeast DNA
 # bowtie_index = "/home/taylordaly31/Bowtie2Index/genome"
+
+# Absolute path to bowtie index on each worker
 bowtie_index = "/home/taylordaly31/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index"
-bowtie_script = "bowtie_spark.sh"
 
-sc.addFile(bowtie_script)
+# bowtie_script = "/home/taylordaly31/spark_dna/bowtie_run_script.sh"
+# bowtie_script_name = "bowtie_run_script.sh"
+# sc.addFile(bowtie_script)
 
+# Run script that starts bowtie with parameters to bowtie index.
 alignment_pipe = readsRDD.pipe("/home/taylordaly31/bowtie2-2.3.4.1/bowtie2 -p 4 --no-hd --no-sq -x " + bowtie_index + " -")
 
 
 def reduce_to_sam(output):
     try:
-        if not os.path.exists("output"):
-            os.makedirs("output")
-        ctx = TaskContext()
-        _id = str(ctx.partitionId())
-        # output.saveAsTextFile("hdfs:///tmp/output_"+_id+".sam")
-
-        file = open("output/output_"+_id+".sam", "a+")
-        file.write(output+'\n')
+        file = open("output.sam", "a+")
+        for alignment in output:
+            file.write(alignment + '\n')
         file.close()
     except Exception as ex:
         print(ex)
 
 
 start = time.time()
-aligned_output = alignment_pipe.collect() # .foreach(lambda x: reduce_to_sam(x))
-file = open("output.sam", "a+")
-for alignment in aligned_output:
-        file.write(alignment+'\n')
-file.close()
+aligned_output = alignment_pipe.foreachPartition(lambda partition: reduce_to_sam(partition))
 end = time.time()
 print("Runtime: " + str(end-start))
 
